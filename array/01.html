@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        var ar1 = Array(4);
+        ar1[0] = "ABC-1";
+        ar1[1] = "ABC-2";
+        ar1[2] = "ABC-3";
+        ar1[3] = "ABC-4";
+
+        function displayArray(){
+            var resultDiv = document.getElementById('resultDiv');
+            for(var i=0;i<ar1.length;i++){
+                var newDiv = document.createElement('DIV');
+                newDiv.innerHTML = "Item " + i + "of "+ ar1.length + 'is '+ ar1[i] + '.'; 
+                resultDiv.appendChild(newDiv);
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Show Array" onclick="displayArray()">
+    <br>
+    <div id="resultDiv">
+
+    </div>
+</body>
+</html>

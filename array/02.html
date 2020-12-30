@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+    <script>
+
+        var list = [];
+        function addItemToExistingList(){
+            var NoOfItem = list.length;
+            list[NoOfItem] = document.getElementById('txtValue').value;
+            displayResult()
+        }
+        function displayResult(){
+            
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                Enter any value:
+            </td>
+            <td>
+                <input type="text" id="txtValue">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <input type="button" id="btnAdd" value="Add to List" onclick="addItemToExistingList()">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div id="itemCount">
+
+    </div>
+    <br>
+    <div id="itemList"></div>
+</body>
+</html>
